@@ -26,6 +26,9 @@ export const QuizContainer = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>Charlie Quiz Jr - Quiz do CBJr!</title>
+      </Head>
       <QuizContainer>
         <Widget>
           <Widget.Header>
