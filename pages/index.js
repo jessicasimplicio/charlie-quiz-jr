@@ -1,9 +1,12 @@
-import styled from 'styled-components'
-import db from '../db.json'
-import Widget from '../src/components/Widget'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GithubCorner'
-import QuizBackground from '../src/components/QuizBackground'
+import React from 'react';
+import styled from 'styled-components';
+import Head from 'next/head';
+
+import db from '../db.json';
+import Widget from '../src/components/Widget';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GithubCorner';
+import QuizBackground from '../src/components/QuizBackground';
 
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
@@ -32,7 +35,7 @@ export default function Home() {
       <QuizContainer>
         <Widget>
           <Widget.Header>
-            <h1>Charlie Brown Jr</h1>
+            <h1>Quiz do Charlie Brown Jr</h1>
           </Widget.Header>
           <Widget.Content>
             <p>Tic prei Tic prau, Charlie Brau</p>
@@ -41,20 +44,15 @@ export default function Home() {
 
         <Widget>
           <Widget.Header>
-
+            <h1>Quizes da galera</h1>
           </Widget.Header>
           <Widget.Content>
-            <h1>Quizes da galerar</h1>
             <p>Eu vim de Santos!</p>
           </Widget.Content>
         </Widget>
-        <Footer>
-
-        </Footer>
+        <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/jessicasimplicio"/>
+      <GitHubCorner projectUrl="https://github.com/jessicasimplicio" />
     </QuizBackground>
   );
-  
-  <Title>My page</Title>
 }
